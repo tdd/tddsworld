@@ -1,0 +1,27 @@
+body {
+  background: white;
+  font: 22px/1.6em Bitter, Georgia, Times, serif;
+  width: 60ex;
+  margin: 80px auto 0;
+  color: #444;
+}
+
+#avatar, h1 { text-align: center; }
+#avatar img { border-radius: 50%; border: 0.3ex solid #ddd; }
+
+h1 { color: black; margin-bottom: 1.2em; }
+p { margin-bottom: 1.2em; }
+
+#links {
+  list-style-type: none; margin: 0; padding: 0;
+}
+#links li {
+  float: left; margin: 0 0 1ex 1ex; width: 19.33ex;
+}
+#links li:nth-child(3n-2) { margin-left: 0; }
+#links li a {
+  display: block; padding: 0 1ex;
+  height: 2.5em; line-height: 2.5em;
+  background: #ddd; text-decoration: none; color: #444;
+}
+#links li a:hover, #links li a:focus { background: #eee; color: black; }
