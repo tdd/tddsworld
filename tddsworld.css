@@ -6,22 +6,49 @@ body {
   color: #444;
 }
 
-#avatar, h1 { text-align: center; }
-#avatar img { border-radius: 50%; border: 0.3ex solid #ddd; }
+#avatar,
+h1 {
+  text-align: center;
+}
+#avatar img {
+  border-radius: 50%;
+  border: 0.3ex solid #ddd;
+}
 
-h1 { color: black; margin-bottom: 1.2em; }
-p { margin-bottom: 1.2em; }
+h1 {
+  color: black;
+  margin-bottom: 1.2em;
+}
+p {
+  margin-bottom: 1.2em;
+}
 
 #links {
-  list-style-type: none; margin: 0; padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #links li {
-  float: left; margin: 0 0 1ex 1ex; width: 19.33ex;
+  margin: 0 0 0.75ex;
+  width: calc(33.33333% - 0.5ex);
 }
-#links li:nth-child(3n-2) { margin-left: 0; }
 #links li a {
-  display: block; padding: 0 1ex;
-  height: 2.5em; line-height: 2.5em;
-  background: #ddd; text-decoration: none; color: #444;
+  display: block;
+  padding: 0 1ex;
+  height: 2.5em;
+  line-height: 2.5em;
+  background: #ddd;
+  text-decoration: none;
+  color: #444;
 }
-#links li a:hover, #links li a:focus { background: #eee; color: black; }
+#links li.wider {
+  width: calc(66.66667% - 0.25ex);
+}
+#links li a:hover,
+#links li a:focus {
+  background: #eee;
+  color: black;
+}
